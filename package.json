@@ -1,5 +1,5 @@
 {
-  "name": "drag-n-drop",
+  "name": "star-wars-store",
   "version": "1.0.0",
   "description": "My rad Nuxt.js project",
   "author": "Manuel Blanco",
@@ -13,9 +13,12 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
+    "@nuxtjs/axios": "^5.5.3",
     "cross-env": "^5.2.0",
     "element-ui": "^2.4.11",
-    "nuxt": "^2.4.0"
+    "firebase": "4.12.1",
+    "nuxt": "^2.4.0",
+    "vuefire": "^2.0.0"
   },
   "devDependencies": {
     "@nuxtjs/eslint-config": "^0.0.1",

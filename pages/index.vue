@@ -3,6 +3,7 @@
     <h1 class="title">
       DRAG N' DROP API
     </h1>
+    <list />
   </section>
 </template>
 

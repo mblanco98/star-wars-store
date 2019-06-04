@@ -1,4 +1,4 @@
-# drag-n-drop
+# STAR WARS STORE
 
 > My rad Nuxt.js project
 
