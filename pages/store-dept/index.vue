@@ -11,6 +11,11 @@
               <el-card shadow="hover">
                 <header slot="header">
                   {{ ch.name }}
+                  <div class="flo-right">
+                    <nuxt-link :to="ch.url">
+                      <small>See profile<i class="el-icon-eye"/></small>
+                    </nuxt-link>
+                  </div>
                 </header>
                 <div>
                   <h4 class="title">Information<i class="el-icon-s-data" /></h4>
@@ -19,9 +24,6 @@
                 <el-tag size="mini">Eye color: {{ ch.eye_color }}</el-tag>
                 <el-tag size="mini">Mass: {{ ch.mass }}</el-tag>
                 <el-tag size="mini">Birth year: {{ ch.birth_year }}</el-tag>
-                <el-tag size="mini">
-                  Specie: <el-link :href="ch.species[0]" target="_blank" />
-                </el-tag>
                 <!-- {{ ch }} -->
               </el-card>
             </div>
