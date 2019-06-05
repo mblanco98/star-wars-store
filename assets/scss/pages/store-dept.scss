@@ -6,23 +6,27 @@
     margin-bottom: 0;
   }
 }
+
 .el-col {
   border-radius: $border-r;
+  margin-bottom: 1rem;
 }
+
 .bg-purple-dark {
   background: #99a9bf;
 }
-.bg-purple {
-  background: #d3dce6;
+
+.ch-wrapper {
+  h1.title {
+    height: 5rem;
+  }
+  h4.title {
+    margin-bottom: 1rem;
+  }
 }
-.bg-purple-light {
-  background: #e5e9f2;
-}
+
 .grid-content {
-  border-radius: 4px;
-  min-height: 36px;
-}
-.row-bg {
-  padding: 10px 0;
-  background-color: #f9fafc;
+  .el-tag {
+    margin: .2rem 0;
+  }
 }

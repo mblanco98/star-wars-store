@@ -26,7 +26,7 @@ export default {
       },
       {
         label: 'Store department',
-        url: '/store'
+        url: '/store-dept'
       }
     ]
   }),
