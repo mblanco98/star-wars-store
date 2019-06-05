@@ -1,0 +1,30 @@
+@import '../base/_variables';
+
+.app-main-wrapper {
+  width: 100%;
+  height: 100vh;
+
+  &.light {
+    background: $light-bg;
+    color:  $fcolor-light;
+    a {
+      color: $fcolor-light;
+    }
+
+  }
+  &.dark {
+    color: $fcolor-dark;
+    background: $dark-bg;
+    a {
+      color: $fcolor-dark;
+    }
+  }
+}
+
+.app-main-wrapper {
+  .btn-theme-changer {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+  }
+}

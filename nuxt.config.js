@@ -3,6 +3,9 @@ require('dotenv').config()
 
 export default {
   mode: 'spa',
+  server: {
+    port: process.env.PORT
+  },
 
   /*
    ** Headers of the page

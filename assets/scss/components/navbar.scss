@@ -1,0 +1,12 @@
+@import '../base/variables';
+
+.el-menu {
+  &.light {
+    background: $light-bg;
+  }
+
+  &.dark {
+    background: $dark-bg;
+    border-bottom: solid 1px #383636;
+  }
+}
