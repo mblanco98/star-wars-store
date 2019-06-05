@@ -20,7 +20,7 @@
                 <el-tag size="mini">Mass: {{ ch.mass }}</el-tag>
                 <el-tag size="mini">Birth year: {{ ch.birth_year }}</el-tag>
                 <el-tag size="mini">
-                  Specie: <el-link :href="ch.species" target="_blank" />
+                  Specie: <el-link :href="ch.species[0]" target="_blank" />
                 </el-tag>
                 <!-- {{ ch }} -->
               </el-card>

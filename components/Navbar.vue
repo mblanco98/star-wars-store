@@ -18,7 +18,6 @@
 export default {
   name: 'Navbar',
   data: () => ({
-    activeIndex: '/',
     navLinks: [
       {
         label: 'Dashboard',
@@ -30,6 +29,11 @@ export default {
       }
     ]
   }),
+  computed: {
+    activeIndex() {
+      return this.$route.path
+    }
+  },
   methods: {
     handleSelect(e) {}
   }
