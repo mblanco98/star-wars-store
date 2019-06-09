@@ -2,7 +2,7 @@ import pkg from './package'
 require('dotenv').config()
 
 export default {
-  mode: 'spa',
+  mode: 'ssr',
   server: {
     port: process.env.PORT
   },

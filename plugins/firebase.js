@@ -6,7 +6,10 @@ import { config } from '../config/firebaseConfig'
 
 Vue.use(firestorePlugin)
 
-firebase.initializeApp(config)
+if (!firebase.apps.length) {
+  firebase.initializeApp(config)
+}
+
 export default ({ app }, inject) => {
   inject('$db', () => firebase.firestore())
 }
