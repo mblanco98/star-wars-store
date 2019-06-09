@@ -1,0 +1,12 @@
+@mixin flex(
+  $self: auto,
+  $flow: row nowrap,
+  $align-items: auto,
+  $justify-content: stretch
+  ) {
+  display: flex;
+  flex-flow: $flow;
+  align-self: $self;
+  align-items: $align-items;
+  justify-content: $justify-content;
+}

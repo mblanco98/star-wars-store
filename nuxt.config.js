@@ -2,7 +2,7 @@ import pkg from './package'
 require('dotenv').config()
 
 export default {
-  mode: 'ssr',
+  mode: 'universal',
   server: {
     port: process.env.PORT
   },
@@ -21,6 +21,9 @@ export default {
     script: [
       {
         src: 'https://www.gstatic.com/firebasejs/6.1.0/firebase-app.js'
+      },
+      {
+        src: 'https://kit.fontawesome.com/6951ff9630.js'
       }
     ]
   },
@@ -28,7 +31,10 @@ export default {
   /*
    ** Customize the progress-bar color
    */
-  loading: true,
+  loading: {
+    color: '#2b6adf',
+    width: '4px'
+  },
   loadingIndicator: {
     name: 'pulse',
     color: '#7475E8',
@@ -38,12 +44,21 @@ export default {
   /*
    ** Global CSS
    */
-  css: ['element-ui/lib/theme-chalk/index.css', '~/assets/scss/main.scss'],
+  css: [
+    'element-ui/lib/theme-chalk/index.css',
+    '~/assets/scss/main.scss',
+    '@fortawesome/fontawesome-svg-core/styles.css'
+  ],
 
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: ['@/plugins/element-ui', '@/plugins/firebase', '@/plugins/axios'],
+  plugins: [
+    '@/plugins/element-ui',
+    '@/plugins/firebase',
+    '@/plugins/fontawesome',
+    '@/plugins/axios'
+  ],
 
   /*
    ** Nuxt.js modules

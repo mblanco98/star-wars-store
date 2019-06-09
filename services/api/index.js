@@ -3,7 +3,17 @@ export const getPlanets = async $axios => {
   return res
 }
 
-export const getCharacters = async $axios => {
+export const getPeople = async $axios => {
   const res = await $axios.$get('/people')
+  return res
+}
+
+export const getStarships = async $axios => {
+  const res = await $axios.get('/starships')
+  return res
+}
+
+export const getVehicules = async $axios => {
+  const res = await $axios.get('/vehicles')
   return res
 }

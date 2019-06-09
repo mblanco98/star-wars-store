@@ -1,6 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro:300,400,700&display=swap');
 @import './helpers/_atomic-classes';
+@import './base/_variables';
 @import 'reset-css';
+
+html,body {
+  background: $white;
+}
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -15,4 +20,16 @@ a {
   font-size: 18px;
   line-height: 1.6;
   font-weight: 500;
+}
+
+.el-footer,
+.el-menu {
+  padding: 0 20px;
+}
+
+.page-enter-active, .page-leave-active {
+  transition: opacity .5s
+}
+.page-enter, .page-leave-active {
+  opacity: 0
 }

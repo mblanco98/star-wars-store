@@ -1,8 +1,10 @@
 @import '../base/_variables';
+@import '../mixins/_mixins';
 
 .app-main-wrapper {
   width: 100%;
-  min-height: 100vh;
+  max-height: 100vh;
+
 
   &.light {
     background: $light-bg;
@@ -21,10 +23,11 @@
   }
 }
 
-.app-main-wrapper {
-  .btn-theme-changer {
-    position: fixed;
-    bottom: 2rem;
-    right: 2rem;
+.btn-theme-changer-wrapper {
+  @include flex($justify-content: flex-end);
+  padding: 0 20px;
+  .el-button {
+    display: none !important;
   }
 }
+

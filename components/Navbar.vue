@@ -1,41 +1,36 @@
 <template>
-  <el-menu
-    :default-active="activeIndex"
-    class="el-menu-demo"
-    mode="horizontal"
-    router
-    @select="handleSelect"
-  >
-    <el-menu-item v-for="(item, i) in navLinks" :key="i" :index="item.url">
-      <nuxt-link :to="item.url">
-        {{ item.label }}
-      </nuxt-link>
-    </el-menu-item>
-  </el-menu>
+  <div class="navbar-wrapper">
+    <h1 class="title">
+      Star Wars items category:
+    </h1>
+    <el-menu
+      :default-active="activeIndex"
+      class="el-menu-demo"
+      mode="horizontal"
+      @select="handleSelect"
+    >
+      <el-menu-item
+        v-for="(item, i) in availableItems"
+        :key="i"
+        :index="`${i}`"
+      >
+        {{ item }}
+      </el-menu-item>
+    </el-menu>
+  </div>
 </template>
 
 <script>
 export default {
   name: 'Navbar',
   data: () => ({
-    navLinks: [
-      {
-        label: 'Dashboard',
-        url: '/'
-      },
-      {
-        label: 'Store',
-        url: '/view'
-      }
-    ]
+    activeIndex: '0',
+    availableItems: ['People', 'Planets', 'Vehicules', 'Starships']
   }),
-  computed: {
-    activeIndex() {
-      return this.$route.path
-    }
-  },
   methods: {
-    handleSelect(e) {}
+    handleSelect(key) {
+      this.$store.dispatch('shop/tabOnViewChanged', this.availableItems[key])
+    }
   }
 }
 </script>

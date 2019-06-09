@@ -1,0 +1,42 @@
+@import '../base/variables';
+@import '../mixins/_mixins';
+
+.sidebar-panel {
+  height: 100vh;
+
+  .social-links-wrapper {
+    padding: 10px;
+    @include flex($justify-content: center)
+  }
+
+  &.light {
+    background: rgb(202, 200, 200);
+    color:  $fcolor-light;
+    a {
+      color: $fcolor-light;
+    }
+
+  }
+  &.dark {
+    color: $fcolor-dark;
+    background: $dark-bg;
+    a {
+      color: $fcolor-dark;
+    }
+  }
+
+  .el-menu {
+    @include flex($justify-content: center);
+  }
+}
+
+.el-menu {
+  &.light {
+    background: $light-bg;
+  }
+
+  &.dark {
+    background: $dark-bg;
+    border-bottom: solid 1px #383636;
+  }
+}

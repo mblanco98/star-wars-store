@@ -1,6 +1,6 @@
 import { Notification } from 'element-ui'
 
-export default function({ $axios, $nuxt, redirect }) {
+export default function({ $axios, $nuxt, store }) {
   $axios.onError(err => {
     if (err.response.status === 500) {
       return $nuxt.error(err)
@@ -15,9 +15,11 @@ export default function({ $axios, $nuxt, redirect }) {
   })
 
   $axios.onResponse(res => {
+    // eslint-disable-next-line
+    console.log(store.state)
     Notification({
       title: 'Success!',
-      message: 'Planets have being loaded',
+      message: `All ${store.state.shop.tabOnView.toLowerCase()} have being loaded`,
       type: 'success',
       duration: 1200
     })

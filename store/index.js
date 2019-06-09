@@ -2,7 +2,7 @@ import * as types from '../storeActionTypes'
 
 export const state = () => ({
   auth: false,
-  dark: true
+  dark: false
 })
 
 export const mutations = {
