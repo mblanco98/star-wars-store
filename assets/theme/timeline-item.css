@@ -253,7 +253,7 @@
     height: 100%;
     border-left: 2px solid #E4E7ED; }
   .el-timeline-item__icon {
-    color: #FAFAFA;
+    color: #FFFFFF;
     font-size: 13px; }
   .el-timeline-item__node {
     position: absolute;
@@ -277,7 +277,7 @@
       width: 14px;
       height: 14px; }
     .el-timeline-item__node--primary {
-      background-color: #453A7B; }
+      background-color: #239BCF; }
     .el-timeline-item__node--success {
       background-color: #7BC855; }
     .el-timeline-item__node--warning {

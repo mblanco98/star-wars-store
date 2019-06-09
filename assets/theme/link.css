@@ -269,7 +269,7 @@
     right: 0;
     height: 0;
     bottom: 0;
-    border-bottom: 1px solid #453A7B; }
+    border-bottom: 1px solid #239BCF; }
   .el-link.is-disabled {
     cursor: not-allowed; }
   .el-link [class*="el-icon-"] + span {
@@ -277,58 +277,58 @@
   .el-link.el-link--default {
     color: #78808E; }
     .el-link.el-link--default:hover {
-      color: #453A7B; }
+      color: #239BCF; }
     .el-link.el-link--default:after {
-      border-color: #453A7B; }
+      border-color: #239BCF; }
     .el-link.el-link--default.is-disabled {
       color: #B2B6BE; }
   .el-link.el-link--primary {
-    color: #453A7B; }
+    color: #239BCF; }
     .el-link.el-link--primary:hover {
-      color: #696094; }
+      color: #4fafd9; }
     .el-link.el-link--primary:after {
-      border-color: #453A7B; }
+      border-color: #239BCF; }
     .el-link.el-link--primary.is-disabled {
-      color: #a09abb; }
+      color: #91cde7; }
     .el-link.el-link--primary.is-underline:hover:after {
-      border-color: #453A7B; }
+      border-color: #239BCF; }
   .el-link.el-link--danger {
     color: #E33232; }
     .el-link.el-link--danger:hover {
-      color: #e85a5a; }
+      color: #e95b5b; }
     .el-link.el-link--danger:after {
       border-color: #E33232; }
     .el-link.el-link--danger.is-disabled {
-      color: #ef9696; }
+      color: #f19999; }
     .el-link.el-link--danger.is-underline:hover:after {
       border-color: #E33232; }
   .el-link.el-link--success {
     color: #7BC855; }
     .el-link.el-link--success:hover {
-      color: #94d276; }
+      color: #95d377; }
     .el-link.el-link--success:after {
       border-color: #7BC855; }
     .el-link.el-link--success.is-disabled {
-      color: #bbe1a8; }
+      color: #bde4aa; }
     .el-link.el-link--success.is-underline:hover:after {
       border-color: #7BC855; }
   .el-link.el-link--warning {
     color: #EAC130; }
     .el-link.el-link--warning:hover {
-      color: #edcc58; }
+      color: #eecd59; }
     .el-link.el-link--warning:after {
       border-color: #EAC130; }
     .el-link.el-link--warning.is-disabled {
-      color: #f2de95; }
+      color: #f5e098; }
     .el-link.el-link--warning.is-underline:hover:after {
       border-color: #EAC130; }
   .el-link.el-link--info {
     color: #BFC2C8; }
     .el-link.el-link--info:hover {
-      color: #cbcdd2; }
+      color: #ccced3; }
     .el-link.el-link--info:after {
       border-color: #BFC2C8; }
     .el-link.el-link--info.is-disabled {
-      color: #dddee1; }
+      color: #dfe1e4; }
     .el-link.el-link--info.is-underline:hover:after {
       border-color: #BFC2C8; }

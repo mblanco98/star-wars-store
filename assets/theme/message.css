@@ -277,18 +277,18 @@
   .el-message--info .el-message__content {
     color: #BFC2C8; }
   .el-message--success {
-    background-color: #edf5ea;
-    border-color: #e1f0d9; }
+    background-color: #f2faee;
+    border-color: #e5f4dd; }
     .el-message--success .el-message__content {
       color: #7BC855; }
   .el-message--warning {
-    background-color: #f8f4e6;
-    border-color: #f7efd2; }
+    background-color: #fdf9ea;
+    border-color: #fbf3d6; }
     .el-message--warning .el-message__content {
       color: #EAC130; }
   .el-message--error {
-    background-color: #f8e6e6;
-    border-color: #f5d2d2; }
+    background-color: #fcebeb;
+    border-color: #f9d6d6; }
     .el-message--error .el-message__content {
       color: #E33232; }
   .el-message__icon {

@@ -247,7 +247,7 @@
   .el-badge__content {
     background-color: #E33232;
     border-radius: 10px;
-    color: #FAFAFA;
+    color: #FFFFFF;
     display: inline-block;
     font-size: 12px;
     height: 18px;
@@ -255,7 +255,7 @@
     padding: 0 6px;
     text-align: center;
     white-space: nowrap;
-    border: 1px solid #FAFAFA; }
+    border: 1px solid #FFFFFF; }
     .el-badge__content.is-fixed {
       position: absolute;
       top: 0;
@@ -271,7 +271,7 @@
       right: 0;
       border-radius: 50%; }
     .el-badge__content--primary {
-      background-color: #453A7B; }
+      background-color: #239BCF; }
     .el-badge__content--success {
       background-color: #7BC855; }
     .el-badge__content--warning {

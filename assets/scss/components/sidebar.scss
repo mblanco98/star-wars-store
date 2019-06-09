@@ -10,8 +10,9 @@
   }
 
   &.light {
-    background: rgb(202, 200, 200);
+    background: $light-bg;
     color:  $fcolor-light;
+    border-right: 1px solid royalblue;
     a {
       color: $fcolor-light;
     }

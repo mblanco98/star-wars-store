@@ -257,9 +257,9 @@
     color: #B2B6BE;
     cursor: not-allowed; }
     .el-select-dropdown__item.is-disabled:hover {
-      background-color: #FAFAFA; }
+      background-color: #FFFFFF; }
   .el-select-dropdown__item.hover, .el-select-dropdown__item:hover {
-    background-color: #F2F5FB; }
+    background-color: #FAFAFA; }
   .el-select-dropdown__item.selected {
-    color: #453A7B;
+    color: #239BCF;
     font-weight: bold; }

@@ -489,7 +489,7 @@
   align-items: center;
   height: 48px;
   line-height: 48px;
-  background-color: #FAFAFA;
+  background-color: #FFFFFF;
   color: #2E3137;
   cursor: pointer;
   border-bottom: 1px solid #EBEEF5;
@@ -509,13 +509,13 @@
       -webkit-transform: rotate(90deg);
       transform: rotate(90deg); }
   .el-collapse-item__header.focusing:focus:not(:hover) {
-    color: #453A7B; }
+    color: #239BCF; }
   .el-collapse-item__header.is-active {
     border-bottom-color: transparent; }
 
 .el-collapse-item__wrap {
   will-change: height;
-  background-color: #FAFAFA;
+  background-color: #FFFFFF;
   overflow: hidden;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;

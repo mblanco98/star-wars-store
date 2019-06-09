@@ -15,8 +15,6 @@ export default function({ $axios, $nuxt, store }) {
   })
 
   $axios.onResponse(res => {
-    // eslint-disable-next-line
-    console.log(store.state)
     Notification({
       title: 'Success!',
       message: `All ${store.state.shop.tabOnView.toLowerCase()} have being loaded`,

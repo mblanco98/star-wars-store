@@ -3,7 +3,7 @@
     <c-sidebar :class="classBaseOnThemeState" />
     <el-container>
       <el-main>
-        <el-header v-show="!isNotDashboard">
+        <el-header v-show="!isNotDashboard" height="80px">
           <c-navbar />
         </el-header>
         <nuxt />

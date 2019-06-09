@@ -258,7 +258,7 @@
       transform: translate(-50%, -50%);
       display: block; }
   .el-image__placeholder {
-    background: #F2F5FB; }
+    background: #FAFAFA; }
   .el-image__error {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -270,6 +270,6 @@
     -ms-flex-align: center;
     align-items: center;
     font-size: 14px;
-    background: #F2F5FB;
+    background: #FAFAFA;
     color: #B2B6BE;
     vertical-align: middle; }

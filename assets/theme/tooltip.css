@@ -312,23 +312,23 @@
       border-left-color: #2E3137; }
   .el-tooltip__popper.is-dark {
     background: #2E3137;
-    color: #FAFAFA; }
+    color: #FFFFFF; }
   .el-tooltip__popper.is-light {
-    background: #FAFAFA;
+    background: #FFFFFF;
     border: 1px solid #2E3137; }
     .el-tooltip__popper.is-light[x-placement^="top"] .popper__arrow {
       border-top-color: #2E3137; }
       .el-tooltip__popper.is-light[x-placement^="top"] .popper__arrow::after {
-        border-top-color: #FAFAFA; }
+        border-top-color: #FFFFFF; }
     .el-tooltip__popper.is-light[x-placement^="bottom"] .popper__arrow {
       border-bottom-color: #2E3137; }
       .el-tooltip__popper.is-light[x-placement^="bottom"] .popper__arrow::after {
-        border-bottom-color: #FAFAFA; }
+        border-bottom-color: #FFFFFF; }
     .el-tooltip__popper.is-light[x-placement^="left"] .popper__arrow {
       border-left-color: #2E3137; }
       .el-tooltip__popper.is-light[x-placement^="left"] .popper__arrow::after {
-        border-left-color: #FAFAFA; }
+        border-left-color: #FFFFFF; }
     .el-tooltip__popper.is-light[x-placement^="right"] .popper__arrow {
       border-right-color: #2E3137; }
       .el-tooltip__popper.is-light[x-placement^="right"] .popper__arrow::after {
-        border-right-color: #FAFAFA; }
+        border-right-color: #FFFFFF; }
