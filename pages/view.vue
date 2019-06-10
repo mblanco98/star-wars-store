@@ -1,12 +1,12 @@
 <template>
   <div class="view-wrapper">
     <el-row :gutter="20">
-      <el-col v-for="(ch, ind) in currentlyPropViewing" :key="ind" :span="8">
+      <el-col v-for="(ch, i) in currentlyPropViewing" :key="i" :span="8">
         <el-card shadow="hover">
           <header slot="header">
             {{ ch.name }}
             <div class="flo-right">
-              <el-link :underline="false">
+              <el-link :underline="false" @click="viewSelectedItem(i)">
                 <i class="fas fa-eye" />
               </el-link>
             </div>
@@ -79,6 +79,12 @@ export default {
   },
   async asyncData({ store }) {
     await store.dispatch('shop/getAllPeople')
+  },
+  methods: {
+    viewSelectedItem(index) {
+      // eslint-disable-next-line
+      console.log(this.$store.state.shop[`${this.prop.toLowerCase()}`][index])
+    }
   }
 }
 </script>
