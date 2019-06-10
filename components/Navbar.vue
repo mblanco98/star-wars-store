@@ -21,11 +21,13 @@
 </template>
 
 <script>
+import availableItems from '../config/availableItems'
+
 export default {
   name: 'Navbar',
   data: () => ({
     activeIndex: '0',
-    availableItems: ['People', 'Planets', 'Vehicules', 'Starships']
+    availableItems
   }),
   methods: {
     handleSelect(key) {

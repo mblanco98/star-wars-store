@@ -1,8 +1,19 @@
 @import '../base/_variables';
 
 .view-wrapper {
+  padding: 1.2rem;
   margin-top: 2rem;
-  padding: 10px;
+  .el-card {
+    width: 22rem;
+    height: 12rem;
+    .icon {
+      font-size: 12px
+    }
+    .el-tag {
+      margin: .2rem;
+      word-break: break-all;
+    }
+  }
 }
 
 .el-row {
@@ -13,7 +24,6 @@
 }
 
 .el-col {
-  border-radius: $border-r;
   margin-bottom: 1rem;
 }
 
@@ -21,9 +31,9 @@
   background: #99a9bf;
 }
 
-.ch-wrapper {
+.view-wrapper {
   h1.title {
-    height: 5rem;
+    height: 4rem;
   }
   h4.title {
     margin-bottom: 1rem;

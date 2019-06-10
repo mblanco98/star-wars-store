@@ -9,11 +9,11 @@ export const getPeople = async $axios => {
 }
 
 export const getStarships = async $axios => {
-  const res = await $axios.get('/starships')
+  const res = await $axios.$get('/starships')
   return res
 }
 
 export const getVehicules = async $axios => {
-  const res = await $axios.get('/vehicles')
+  const res = await $axios.$get('/vehicles')
   return res
 }

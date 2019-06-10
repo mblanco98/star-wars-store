@@ -10,7 +10,7 @@ export const state = () => ({
   people: [],
   planets: [],
   vehicles: [],
-  spaceships: [],
+  starships: [],
   tabOnView: 'People'
 })
 
@@ -22,9 +22,9 @@ export const mutations = {
     state.people = people
   },
   [types.GET_STARSHIPS](state, starships) {
-    state.spaceships = starships
+    state.starships = starships
   },
-  [types.GET_VEHICULES](state, vehicles) {
+  [types.GET_VEHICLES](state, vehicles) {
     state.vehicles = vehicles
   },
   [types.TAB_VIEW](state, tab) {
@@ -40,7 +40,7 @@ export const actions = {
   async getAllPlanets({ commit }) {
     const res = await getPlanets(this.$axios)
     if (res) {
-      commit('GET_PLANETS', res.results)
+      commit(`${types.GET_PLANETS}`, res.results)
       return res
     }
   },
@@ -48,15 +48,16 @@ export const actions = {
   async getAllStarships({ commit }) {
     const res = await getStarships(this.$axios)
     if (res) {
-      commit('GET_STARSHIPS', res.results)
+      commit(`${types.GET_STARSHIPS}`, res.results)
       return res
     }
   },
 
-  async getAllVehicules({ commit }) {
+  async getAllVehicles({ commit }) {
     const res = await getVehicules(this.$axios)
     if (res) {
-      commit('GET_VEHICULES', res.results)
+      // eslint-disable-next-line
+      commit(`${types.GET_VEHICLES}`, res.results)
       return res
     }
   },
@@ -64,7 +65,7 @@ export const actions = {
   async getAllPeople({ commit }) {
     const res = await getPeople(this.$axios)
     if (res) {
-      commit('GET_PEOPLE', res.results)
+      commit(`${types.GET_PEOPLE}`, res.results)
       return res
     }
   }
